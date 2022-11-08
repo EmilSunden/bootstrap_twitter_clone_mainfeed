@@ -1,41 +1,80 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    height: 100vh;
-    max-width: fit-content;
+  min-height: 100vh;
 }
 
 img {
-    border-radius: 50%;
-    height: 40px;
+  border-radius: 50%;
+  height: 40px;
 }
 
 .mock-tweet-img {
-    border-radius: 0%;
-    /* min-width: 50%; */
-    height: 400px;    
-    max-width: 100%;
-    /* background-size: cover;  */
+  border-radius: 0%;
+  /* min-width: 50%; */
+  height: 400px;
+  max-width: 100%;
+  /* background-size: cover;  */
 }
 
-.comments, .retweets, .likes, .shares:hover {
-    cursor: pointer;
+.comments,
+.retweets,
+.likes,
+.shares:hover {
+  cursor: pointer;
 }
 
 .post-content {
-    max-width: 100%;
+  max-width: 100%;
 }
 div > img#profile-pic {
-    width: 50px !important;
+  width: 50px !important;
 }
 #btn {
-    width: 80px !important;
-} 
+  width: 80px !important;
+}
 
+.container {
+  color: rgb(0, 0, 0);
+}
 
+.content {
+  color: rgb(255, 255, 255);
+  background: #243447;
+}
 
+.followImage {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-size: contain;
+}
 
+.button {
+  color: aliceblue;
+  background-color: blaCK;
+  border-radius: 55px;
+  height: 30px;
+  width: 80px;
+}
+
+.message {
+  color: aliceblue;
+  right: 5vw !important;
+  left: auto !important;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px,
+    rgba(255, 255, 255, 0.12) 0px -12px 30px,
+    rgba(255, 255, 255, 0.12) 0px 4px 6px,
+    rgba(255, 255, 255, 0.17) 0px 12px 13px,
+    rgba(255, 255, 255, 0.09) 0px -3px 5px;
+}
+
+.infoText {
+  font-size: 15px !important;
+}

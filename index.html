@@ -1,138 +1,658 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Twitter Bootstrap</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-<body class="bg-dark">
-    <section class="mw-100 position-relative border border-secondary border-top-0 p-2 m-2">
-        <div>
-            <h1 class="text-white fs-5 ps-2 pb-2">Home</h1>
-            <img src="img/stars.svg" alt="Stars" class="position-absolute top-0 end-0 p-2">
-            <img src="img/zoe.jpg" alt="Profile picture" class="w-25 h-25 rounded-circle" id="profile-pic"/>
-            <input class="bg-dark border-0 ms-2 fs-5" type="text" placeholder="What´s happening?"/>
+  </head>
+  <body class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+            <!-- Noels kode här -->
         </div>
-        <div class="ms-3">
-            <img src="img/bild.svg" class="pt-3 ps-5">
-            <img src="img/gif.svg" class="pt-3 ps-2">
-            <img src="img/form.svg" class="pt-3 ps-2">
-            <img src="img/smiley.svg" class="pt-3 ps-2">
-            <img src="img/calender.svg" class="pt-3 ps-2">
-            <img src="img/place.svg" class="pt-3 ps-2">
-            <button class="btn btn-primary rounded-pill position-absolute top-1 end-0 mb-2 me-3" id="btn" type="submit">Tweet</button>
-        </div>
-    </section>
-    <section>
-    <div class="text-white mw-100 min-vh-100 overflow-scroll twitter-feed">
-        <div class="px-3 py-2 border-bottom border-secondary d-flex flex-nowrap first_post">
-            <div class="d-flex justify-content-start">
-                <img src="https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png" alt="avatar" class="mt-2">
+        <div class="col-6">
+          <section
+            class="position-relative border border-secondary border-top-0 p-2 m-2"
+          >
+            <div>
+              <h1 class="text-white fs-5 ps-2 pb-2">Home</h1>
+              <img
+                src="img/stars.svg"
+                alt="Stars"
+                class="position-absolute top-0 end-0 p-2"
+              />
+              <img
+                src="img/zoe.jpg"
+                alt="Profile picture"
+                class="w-25 h-25 rounded-circle"
+                id="profile-pic"
+              />
+              <input
+                class="bg-dark border-0 ms-2 fs-5"
+                type="text"
+                placeholder="What´s happening?"
+              />
             </div>
-            <div class="post-content">
-                <div class="post-header-text">
-                    <h3 class="ps-2 pt-1 fs-6 fw-bold">
-                        Emil Sundén
-                        <span class="fs-6 fw-lighter">
-                            <span class="material-icons fs-6 text-info"> verified </span>@ZemiHD 17h
-                        </span>
-                    </h3>
+            <div class="ms-3">
+              <img src="img/bild.svg" class="pt-3 ps-5" />
+              <img src="img/gif.svg" class="pt-3 ps-2" />
+              <img src="img/form.svg" class="pt-3 ps-2" />
+              <img src="img/smiley.svg" class="pt-3 ps-2" />
+              <img src="img/calender.svg" class="pt-3 ps-2" />
+              <img src="img/place.svg" class="pt-3 ps-2" />
+              <button
+                class="btn btn-primary rounded-pill position-absolute top-1 end-0 mb-2 me-3"
+                id="btn"
+                type="submit"
+              >
+                Tweet
+              </button>
+            </div>
+          </section>
+          <section>
+            <div
+              class="text-white mw-100 min-vh-100 overflow-scroll twitter-feed"
+            >
+              <div
+                class="px-3 py-2 border-bottom border-secondary d-flex flex-nowrap first_post"
+              >
+                <div class="d-flex justify-content-start">
+                  <img
+                    src="https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png"
+                    alt="avatar"
+                    class="mt-2"
+                  />
                 </div>
-                <p class="ms-2 post-text">Lorem ipsum dolor sit amet.</p>
-                
-                <img src="./img/ella-don-JomkRNkzKhE-unsplash.jpg" alt="" class="mock-tweet-img ps-2">
-                <div class="post_footer d-flex w-75 justify-content-between mt-2 gap-5 ps-2 icons">
-                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi comments" width="20"  height="20" ><g fill="#536471"><path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z" fill="#536471"></path></g></svg>
-                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi retweets" width="20"  height="20" ><g fill="#536471"><path d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z" fill="#536471"></path></g></svg>
-                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi likes" width="20"  height="20" ><g fill="#536471"><path d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z" fill="#536471"></path></g></svg>
-                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi shares" width="20"  height="20" ><g fill="#536471"><path d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z" fill="#536471"></path></g></svg>
-                </div> 
-            </div>
-        </div>
-
-        <div class="px-3 py-2 border-bottom border-light d-flex flex-nowrap second_post">
-            <div class="d-flex justify-content-start">
-                <img src="https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png" alt="avatar" class="mt-2">
-            </div>
-            <div class="post-content">
-                <div class="post-header-text">
+                <div class="post-content">
+                  <div class="post-header-text">
                     <h3 class="ps-2 pt-1 fs-6 fw-bold">
-                        Emil Sundén
-                        <span class="fs-6 fw-lighter">
-                            <span class="material-icons fs-6 text-info"> verified </span>@ZemiHD 3d
-                        </span>
+                      Emil Sundén
+                      <span class="fs-6 fw-lighter">
+                        <span class="material-icons fs-6 text-info">
+                          verified </span
+                        >@ZemiHD 17h
+                      </span>
                     </h3>
+                  </div>
+                  <p class="ms-2 post-text">Lorem ipsum dolor sit amet.</p>
+
+                  <img
+                    src="./img/ella-don-JomkRNkzKhE-unsplash.jpg"
+                    alt=""
+                    class="mock-tweet-img ps-2"
+                  />
+                  <div
+                    class="post_footer d-flex w-75 justify-content-between mt-2 gap-5 ps-2 icons"
+                  >
+                    <svg
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi comments"
+                      width="20"
+                      height="20"
+                    >
+                      <g fill="#536471">
+                        <path
+                          d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z"
+                          fill="#536471"
+                        ></path>
+                      </g>
+                    </svg>
+                    <svg
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi retweets"
+                      width="20"
+                      height="20"
+                    >
+                      <g fill="#536471">
+                        <path
+                          d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"
+                          fill="#536471"
+                        ></path>
+                      </g>
+                    </svg>
+                    <svg
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi likes"
+                      width="20"
+                      height="20"
+                    >
+                      <g fill="#536471">
+                        <path
+                          d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"
+                          fill="#536471"
+                        ></path>
+                      </g>
+                    </svg>
+                    <svg
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi shares"
+                      width="20"
+                      height="20"
+                    >
+                      <g fill="#536471">
+                        <path
+                          d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z"
+                          fill="#536471"
+                        ></path>
+                      </g>
+                    </svg>
+                  </div>
                 </div>
-                <p class="ms-2 post-text">Lorem ipsum dolor sit amet.</p>
+              </div>
 
-                <img src="./img/ella-don-JomkRNkzKhE-unsplash.jpg" alt="" class="mock-tweet-img ps-2">
-                <div class="post_footer d-flex w-75 justify-content-between mt-2 gap-5 ps-2">
-                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi comments" width="20"  height="20" ><g fill="#536471"><path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z" fill="#536471"></path></g></svg>
-                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi retweets" width="20"  height="20" ><g fill="#536471"><path d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z" fill="#536471"></path></g></svg>
-                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi likes" width="20"  height="20" ><g fill="#536471"><path d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z" fill="#536471"></path></g></svg>
-                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi shares" width="20"  height="20" ><g fill="#536471"><path d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z" fill="#536471"></path></g></svg>
-                </div> 
-            </div>
-        </div>
-
-        <div class="px-3 py-2 border-bottom border-light d-flex flex-nowrap third_post">
-            <div class="d-flex justify-content-start">
-                <img src="https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png" alt="avatar" class="mt-2">
-            </div>
-            <div class="post-content">
-                <div class="post-header-text">
+              <div
+                class="px-3 py-2 border-bottom border-light d-flex flex-nowrap second_post"
+              >
+                <div class="d-flex justify-content-start">
+                  <img
+                    src="https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png"
+                    alt="avatar"
+                    class="mt-2"
+                  />
+                </div>
+                <div class="post-content">
+                  <div class="post-header-text">
                     <h3 class="ps-2 pt-1 fs-6 fw-bold">
-                        Emil Sundén
-                        <span class="fs-6 fw-lighter">
-                            <span class="material-icons fs-6 text-info"> verified </span>@ZemiHD 1w
-                        </span>
+                      Emil Sundén
+                      <span class="fs-6 fw-lighter">
+                        <span class="material-icons fs-6 text-info">
+                          verified </span
+                        >@ZemiHD 3d
+                      </span>
                     </h3>
+                  </div>
+                  <p class="ms-2 post-text">Lorem ipsum dolor sit amet.</p>
+
+                  <img
+                    src="./img/ella-don-JomkRNkzKhE-unsplash.jpg"
+                    alt=""
+                    class="mock-tweet-img ps-2"
+                  />
+                  <div
+                    class="post_footer d-flex w-75 justify-content-between mt-2 gap-5 ps-2"
+                  >
+                    <svg
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi comments"
+                      width="20"
+                      height="20"
+                    >
+                      <g fill="#536471">
+                        <path
+                          d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z"
+                          fill="#536471"
+                        ></path>
+                      </g>
+                    </svg>
+                    <svg
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi retweets"
+                      width="20"
+                      height="20"
+                    >
+                      <g fill="#536471">
+                        <path
+                          d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"
+                          fill="#536471"
+                        ></path>
+                      </g>
+                    </svg>
+                    <svg
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi likes"
+                      width="20"
+                      height="20"
+                    >
+                      <g fill="#536471">
+                        <path
+                          d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"
+                          fill="#536471"
+                        ></path>
+                      </g>
+                    </svg>
+                    <svg
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi shares"
+                      width="20"
+                      height="20"
+                    >
+                      <g fill="#536471">
+                        <path
+                          d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z"
+                          fill="#536471"
+                        ></path>
+                      </g>
+                    </svg>
+                  </div>
                 </div>
-                <p class="ms-2 post-text">Lorem ipsum dolor sit amet.</p>
+              </div>
 
-                <img src="./img/ella-don-JomkRNkzKhE-unsplash.jpg" alt="" class="mock-tweet-img ps-2">
-                <div class="post_footer d-flex w-75 justify-content-between mt-2 gap-5 ps-2">
-                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi comments" width="20"  height="20" ><g fill="#536471"><path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z" fill="#536471"></path></g></svg>
-                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi retweets" width="20"  height="20" ><g fill="#536471"><path d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z" fill="#536471"></path></g></svg>
-                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi likes" width="20"  height="20" ><g fill="#536471"><path d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z" fill="#536471"></path></g></svg>
-                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi shares" width="20"  height="20" ><g fill="#536471"><path d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z" fill="#536471"></path></g></svg>
-                </div> 
-            </div>
-        </div>
-      
-
-        <div class="px-3 py-2 border-bottom border-light d-flex flex-nowrap fourth-post">
-            <div class="d-flex justify-content-start">
-                <img src="https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png" alt="avatar" class="mt-2">
-            </div>
-            <div class="post-content">
-                <div class="post-header-text">
+              <div
+                class="px-3 py-2 border-bottom border-light d-flex flex-nowrap third_post"
+              >
+                <div class="d-flex justify-content-start">
+                  <img
+                    src="https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png"
+                    alt="avatar"
+                    class="mt-2"
+                  />
+                </div>
+                <div class="post-content">
+                  <div class="post-header-text">
                     <h3 class="ps-2 pt-1 fs-6 fw-bold">
-                        Emil Sundén
-                        <span class="fs-6 fw-lighter">
-                            <span class="material-icons fs-6 text-info"> verified </span>@ZemiHD 1y
-                        </span>
+                      Emil Sundén
+                      <span class="fs-6 fw-lighter">
+                        <span class="material-icons fs-6 text-info">
+                          verified </span
+                        >@ZemiHD 1w
+                      </span>
                     </h3>
-                </div>
-                <p class="ms-2 post-text">Lorem ipsum dolor sit amet.</p>
+                  </div>
+                  <p class="ms-2 post-text">Lorem ipsum dolor sit amet.</p>
 
-                <img src="./img/ella-don-JomkRNkzKhE-unsplash.jpg" alt="" class="mock-tweet-img ps-2">
-                <div class="post_footer d-flex w-75 justify-content-between mt-2 gap-5 ps-2">
-                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi comments" width="20"  height="20" ><g fill="#536471"><path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z" fill="#536471"></path></g></svg>
-                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi retweets" width="20"  height="20" ><g fill="#536471"><path d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z" fill="#536471"></path></g></svg>
-                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi likes" width="20"  height="20" ><g fill="#536471"><path d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z" fill="#536471"></path></g></svg>
-                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi shares" width="20"  height="20" ><g fill="#536471"><path d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z" fill="#536471"></path></g></svg>
-                </div> 
+                  <img
+                    src="./img/ella-don-JomkRNkzKhE-unsplash.jpg"
+                    alt=""
+                    class="mock-tweet-img ps-2"
+                  />
+                  <div
+                    class="post_footer d-flex w-75 justify-content-between mt-2 gap-5 ps-2"
+                  >
+                    <svg
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi comments"
+                      width="20"
+                      height="20"
+                    >
+                      <g fill="#536471">
+                        <path
+                          d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z"
+                          fill="#536471"
+                        ></path>
+                      </g>
+                    </svg>
+                    <svg
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi retweets"
+                      width="20"
+                      height="20"
+                    >
+                      <g fill="#536471">
+                        <path
+                          d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"
+                          fill="#536471"
+                        ></path>
+                      </g>
+                    </svg>
+                    <svg
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi likes"
+                      width="20"
+                      height="20"
+                    >
+                      <g fill="#536471">
+                        <path
+                          d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"
+                          fill="#536471"
+                        ></path>
+                      </g>
+                    </svg>
+                    <svg
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi shares"
+                      width="20"
+                      height="20"
+                    >
+                      <g fill="#536471">
+                        <path
+                          d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z"
+                          fill="#536471"
+                        ></path>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="px-3 py-2 border-bottom border-light d-flex flex-nowrap fourth-post"
+              >
+                <div class="d-flex justify-content-start">
+                  <img
+                    src="https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png"
+                    alt="avatar"
+                    class="mt-2"
+                  />
+                </div>
+                <div class="post-content">
+                  <div class="post-header-text">
+                    <h3 class="ps-2 pt-1 fs-6 fw-bold">
+                      Emil Sundén
+                      <span class="fs-6 fw-lighter">
+                        <span class="material-icons fs-6 text-info">
+                          verified </span
+                        >@ZemiHD 1y
+                      </span>
+                    </h3>
+                  </div>
+                  <p class="ms-2 post-text">Lorem ipsum dolor sit amet.</p>
+
+                  <img
+                    src="./img/ella-don-JomkRNkzKhE-unsplash.jpg"
+                    alt=""
+                    class="mock-tweet-img ps-2"
+                  />
+                  <div
+                    class="post_footer d-flex w-75 justify-content-between mt-2 gap-5 ps-2"
+                  >
+                    <svg
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi comments"
+                      width="20"
+                      height="20"
+                    >
+                      <g fill="#536471">
+                        <path
+                          d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z"
+                          fill="#536471"
+                        ></path>
+                      </g>
+                    </svg>
+                    <svg
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi retweets"
+                      width="20"
+                      height="20"
+                    >
+                      <g fill="#536471">
+                        <path
+                          d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"
+                          fill="#536471"
+                        ></path>
+                      </g>
+                    </svg>
+                    <svg
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi likes"
+                      width="20"
+                      height="20"
+                    >
+                      <g fill="#536471">
+                        <path
+                          d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"
+                          fill="#536471"
+                        ></path>
+                      </g>
+                    </svg>
+                    <svg
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi shares"
+                      width="20"
+                      height="20"
+                    >
+                      <g fill="#536471">
+                        <path
+                          d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z"
+                          fill="#536471"
+                        ></path>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <!-- Mock Tweet End-->
             </div>
+          </section>
         </div>
-        <!-- Mock Tweet End-->
+        <div class="col d-none d-md-flex justify-content-end">
+          <section>
+            <!-- Searchbar -->
+            <div
+              id="searchbar"
+              class="row rounded d-flex align-items-center mt-2 content"
+            >
+              <div class="col-1">
+                <svg
+                  id="serachicon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  />
+                </svg>
+              </div>
+              <div class="col">
+                <input
+                  class="rounded bg-transparent border-0 py-2"
+                  type="text"
+                  placeholder="Search Twitter"
+                />
+              </div>
+            </div>
+            <!-- Trending -->
+            <div class="row flex-column mt-4 content rounded pl-2 pr-2">
+              <div
+                class="col d-flex justify-content-between align-items-center rounded mt-3 ml-1 pt-2 pl-1"
+              >
+                <p class="h4 pb-3"><b>Trends for you</b></p>
+                <svg
+                  class="mr-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-gear"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"
+                  />
+                  <path
+                    d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <div class="col d-flex justify-content-between pl-1 ml-1">
+                  <span>Tredning in Sweden</span>
+                  <svg
+                    class="align-self-end mr-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-three-dots"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
+                    />
+                  </svg>
+                </div>
+                <div class="row flex-column pl-1 ml-1">
+                  <span><b>Bulletin</b></span>
+                  <span>6,082 Tweets</span>
+                </div>
+                <div class="col d-flex justify-content-between pt-4 pl-1 ml-1">
+                  <span>Technology - Trending</span>
+                  <svg
+                    class="mr-4"
+                    class="align-self-end"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-three-dots"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
+                    />
+                  </svg>
+                </div>
+                <div class="row flex-column pl-1 ml-1">
+                  <span><b>Bitcoin</b></span>
+                  <span>348K Tweets</span>
+                </div>
+                <div class="col d-flex justify-content-between pt-4 pl-1 ml-1">
+                  <span>Automobile Brands - Trending</span>
+                  <svg
+                    class="align-self-end mr-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-three-dots"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
+                    />
+                  </svg>
+                </div>
+                <div class="row flex-column pl-1 ml-1">
+                  <span><b>Tesla</b></span>
+                  <span>142K Tweets</span>
+                  <p class="pt-3 text-primary">Show more</p>
+                </div>
+              </div>
+            </div>
+            <!-- Follow -->
+            <div class="row mt-3 pl-2 pr-2 pt-2 rounded content">
+              <div class="h4">
+                <p><b>Who to follow</b></p>
+              </div>
+              <div class="d-flex py-2">
+                <div>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg"
+                    class="followImage"
+                  />
+                </div>
+                <div class="row infoText p-2">
+                  <span class=><b>Elon Musk</b></span>
+                  <span class="text-muted">@elonmusk follows you</span>
+                </div>
+                <div class="d-flex align-self-center pt-2">
+                  <button type="button" class="btn btn-dark rounded-pill">
+                    Follow
+                  </button>
+                </div>
+              </div>
+              <div class="pt-2 pb-3 text-primary content rounded">
+              <span >Show more</span>
+            </div>
+
+            <!-- Message -->
+            <div class="row d-flex justify-content-end">
+              <div
+                class="col-2 fixed-bottom d-flex justify-content-between align-items-center px-3 py-2 message"
+              >
+                <h5 class="m-0"><b>Message</b></h5>
+                <div class="icons">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-envelope-plus"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"
+                    />
+                    <path
+                      d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 0-.5.5v1h-1a.5.5 0 0 0 0 1h1v1a.5.5 0 0 0 1 0v-1h1a.5.5 0 0 0 0-1h-1v-1a.5.5 0 0 0-.5-.5Z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-chevron-double-up"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
     </div>
-    </section> 
-</body>
+  </body>
 </html>
