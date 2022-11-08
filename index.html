@@ -11,9 +11,27 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
-    <div class="mw-100 min-vh-100 overflow-scroll twitter-feed">
-        <div class="px-3 py-2 border-bottom border-light d-flex flex-nowrap first_post">
+<body class="bg-dark">
+    <section class="mw-100 position-relative border border-secondary border-top-0 p-2 m-2">
+        <div>
+            <h1 class="text-white fs-5 ps-2 pb-2">Home</h1>
+            <img src="img/stars.svg" alt="Stars" class="position-absolute top-0 end-0 p-2">
+            <img src="img/zoe.jpg" alt="Profile picture" class="w-25 h-25 rounded-circle" id="profile-pic"/>
+            <input class="bg-dark border-0 ms-2 fs-5" type="text" placeholder="What´s happening?"/>
+        </div>
+        <div class="ms-3">
+            <img src="img/bild.svg" class="pt-3 ps-5">
+            <img src="img/gif.svg" class="pt-3 ps-2">
+            <img src="img/form.svg" class="pt-3 ps-2">
+            <img src="img/smiley.svg" class="pt-3 ps-2">
+            <img src="img/calender.svg" class="pt-3 ps-2">
+            <img src="img/place.svg" class="pt-3 ps-2">
+            <button class="btn btn-primary rounded-pill position-absolute top-1 end-0 mb-2 me-3" id="btn" type="submit">Tweet</button>
+        </div>
+    </section>
+    <section>
+    <div class="text-white mw-100 min-vh-100 overflow-scroll twitter-feed">
+        <div class="px-3 py-2 border-bottom border-secondary d-flex flex-nowrap first_post">
             <div class="d-flex justify-content-start">
                 <img src="https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png" alt="avatar" class="mt-2">
             </div>
@@ -87,7 +105,7 @@
                 </div> 
             </div>
         </div>
-        
+      
 
         <div class="px-3 py-2 border-bottom border-light d-flex flex-nowrap fourth-post">
             <div class="d-flex justify-content-start">
@@ -115,5 +133,6 @@
         </div>
         <!-- Mock Tweet End-->
     </div>
+    </section> 
 </body>
 </html>

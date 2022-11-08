@@ -29,6 +29,12 @@ img {
 .post-content {
     max-width: 100%;
 }
+div > img#profile-pic {
+    width: 50px !important;
+}
+#btn {
+    width: 80px !important;
+} 
 
 
 
