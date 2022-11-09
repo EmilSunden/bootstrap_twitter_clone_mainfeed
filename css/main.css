@@ -24,7 +24,10 @@ img {
 .comments,
 .retweets,
 .likes,
-.shares:hover {
+.shares,
+.show,
+img,
+.twitter-feed:hover {
   cursor: pointer;
 }
 
