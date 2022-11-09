@@ -152,3 +152,9 @@ div > img#profile-pic {
     display: flex !important;
   }
 }
+
+@media (max-width: 767px) {
+  .sidebarText {
+    display: none;
+  }
+}
